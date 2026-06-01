@@ -249,6 +249,7 @@ while IFS=$'\t' read -r _ _ idx; do
   echo ""
 done < <(printf '%s\n' "${SORT_KEYS[@]}" | LC_ALL=C sort -t$'\t' -k1,1n -k2,2)
 
+echo ""
 echo "---"
 echo ""
 echo "### Project Impact"
